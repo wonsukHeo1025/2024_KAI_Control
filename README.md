@@ -1,7 +1,16 @@
 # KAI Driverless car Control part
 건국대학교 자작자동차 동아리 'Team K.A.I'에서 2024 대학생 창작 모빌리티 경진대회에 사용했던 제어 파트의 모든 것
 
-![image](https://github.com/user-attachments/assets/82c385fa-c066-47d9-99b1-d67dbfa1670e)
+![image](https://github.com/user-attachments/assets/207a4166-f4aa-4fff-8612-c657b25a92bc)
+
+
+https://github.com/user-attachments/assets/eb7b4ba7-077a-4692-982d-707644006857
+
+
+https://github.com/user-attachments/assets/cfde363a-4079-4ee5-ae85-68c2481a473a
+
+
+
 
 
 ## 대회 개요
@@ -82,27 +91,23 @@
 - 아두이노(ESP32)를 기반으로 듀얼 코어 제어기 설계 및 PID 알고리즘 구현
 - 차량 속도 및 방향 제어를 위한 PID 알고리즘 설계 및 튜닝
 
-![image](https://github.com/user-attachments/assets/f4c43015-6875-4505-8a3e-4c3368484aeb)
+![image](https://github.com/user-attachments/assets/085dd79c-d229-4ea7-a9a8-a05b332f5d5a)
+
 
 
 < 종방향 제어 task 코드 >
 
 
-
-https://github.com/user-attachments/assets/a4baaec2-f8bf-4fa3-8111-f228f14c4b1e
-
-
-
-<종방향 테스트 영상>
-
 - 감속을 위한 브레이크 시스템 구현
 
-![image](https://github.com/user-attachments/assets/afd55431-9cab-4241-8fd7-1f92d95f4a00)
+![image](https://github.com/user-attachments/assets/d2509ea1-a71d-450f-b6e2-f4468f7276a8)
+
 
 
 <pid 아웃풋 - 브레이크 제어 코드>
 
-![image](https://github.com/user-attachments/assets/4094dbc9-d40b-4ee6-8cb3-82094fa66fe3)
+![image](https://github.com/user-attachments/assets/4411073c-82b7-4bb9-a836-78a07963ced5)
+
 
 
 <지수함수로 나타낸 브레이크 함수>
@@ -119,28 +124,32 @@ https://github.com/user-attachments/assets/a4baaec2-f8bf-4fa3-8111-f228f14c4b1e
 3. 목표 각도를 -45도에서 45도 범위로 스케일링하여 CAN 메시지로 전송
 - ROS publisher-subscriber 구조를 통해 제어값 전송 및 데이터 로깅
 
-![image](https://github.com/user-attachments/assets/6f9ee93a-6c11-46db-866a-d50e7e3679ed)
+![image](https://github.com/user-attachments/assets/92c8a1f6-411f-43d8-9938-da0c358d46da)
+
 
 
 <커스텀 메세지 형식을 제어기와 각 액추에이터에 전달하는 통합 통신 브릿지 노드>
 
-![image](https://github.com/user-attachments/assets/cc6cd8b8-1277-4ff0-8369-8ea21305c707)
+![image](https://github.com/user-attachments/assets/d071a63b-c1f5-4f2f-8c7c-f1b40e29f55f)
+
 
 
 <원하는 제어 토픽값을 비트 연산을 통해 적절한 명령어 형식으로 변환하는 코드>
 
-![image](https://github.com/user-attachments/assets/159396dc-18f3-4342-a12e-d0bf0922ee43)
+![image](https://github.com/user-attachments/assets/c7c4801e-d705-4495-9d7e-b573eb426c83)
+
 
 
 <CAN 통신에서 하트비트 신호를 수신하여 현재 각도 정보, 전류 정보, 모터 활성화 정보와 같은 데이터를 처리하는 코드>
 
 <빅 엔디안 방식이기에 데이터를 뒤집고 이를 실제 각도로 변환하는 내용 포함>
 
-![image](https://github.com/user-attachments/assets/226c09d0-91b1-4450-a4d7-d3e2438e4044)
+![image](https://github.com/user-attachments/assets/49a681bf-f3d5-4a88-a257-2fc3e889d57f)
+
 
 <목표 스티어링 값을 CAN 신호로 변환하여 제어 토픽을 전송하는 모습>
 
-![image](https://github.com/user-attachments/assets/1fb23a87-64fe-4d60-8587-cacf73edb8cc)
+![image](https://github.com/user-attachments/assets/88d1cd5a-1381-48d1-94df-8d7ded2dbca3)
 
 
 <스티어링 모터 PID 튜닝>
@@ -157,28 +166,32 @@ https://github.com/user-attachments/assets/a4baaec2-f8bf-4fa3-8111-f228f14c4b1e
 
 - RC 회로를 이용한 하드웨어 디바운싱
 
-![image](https://github.com/user-attachments/assets/cab8fde2-8375-4989-9f69-da67aa0bc9f0)
+![image](https://github.com/user-attachments/assets/16901453-8a1c-475c-9528-4b910c146638)
+
 
 
 <RC 회로를 이용한 하드웨어 디바운싱>
 
 - 소프트웨어 디바운싱 구현
 
-![image](https://github.com/user-attachments/assets/cbc4f778-ee02-4172-b31f-9fa7a4f16bd4)
+![image](https://github.com/user-attachments/assets/e412d1ab-1fcf-45db-a218-308453f28402)
+
 
 
 <소프트웨어 디바운싱 코드>
 
 - 포토커플러 기반 신호 절연
 
-![image](https://github.com/user-attachments/assets/2574ff12-fad9-4496-8400-bc898fecc766)
+![image](https://github.com/user-attachments/assets/499d00a0-e23d-412d-9292-6ba038cb8e24)
+
 
 
 <포토커플러 회로도>
 
 - 사용하지 않는 GPIO 핀의 풀다운 모드 지정
 
-![image](https://github.com/user-attachments/assets/25ff5ad2-7785-4755-a7ba-9ba901a00a6e)
+![image](https://github.com/user-attachments/assets/874b9d8a-78be-4b8e-8471-b611b0181018)
+
 
 
 <풀다운 처리를 통한 노이즈 방지 코드>
@@ -188,17 +201,20 @@ https://github.com/user-attachments/assets/a4baaec2-f8bf-4fa3-8111-f228f14c4b1e
 - ROSbag 데이터 + GPS 기반 측정값을 비교하며 PID 제어 알고리즘 성능 테스트 → 상승 시간 2초, 오버슈트 5% 미만으로 제어 성능 최적화
 - 속도 및 조향 데이터를 디스플레이로 시각화하여 피드백 구현 및 속도 간 오차 데이터를 활용한 동적 튜닝
 
-![image](https://github.com/user-attachments/assets/02a0b084-8215-4425-8e02-72acecd8e52f)
+![image](https://github.com/user-attachments/assets/69dd6e6d-f758-48bd-bf05-525b151b5d28)
+
 
 
 <스텝입력을 넣었을 때 관측된 그래프>
 
-![image](https://github.com/user-attachments/assets/b5dc5db6-30af-4e5c-bcdb-16f85383924f)
+![image](https://github.com/user-attachments/assets/5b3f48ae-23b8-43e2-b4be-70aa119d15e5)
+
 
 
 <Sine wave 입력에 대한 반응 그래프>
 
-![image](https://github.com/user-attachments/assets/9b3f2e8e-7318-492c-98e5-56bf81af7ae4)
+![image](https://github.com/user-attachments/assets/ebd53c77-f1da-40a8-8df9-4d85089a2181)
+
 
 
 <ROSbag을 통해 성능 테스트 데이터 로깅 및 분석>
