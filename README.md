@@ -1,7 +1,9 @@
 # KAI Driverless car Control part
 건국대학교 자작자동차 동아리 'Team K.A.I'에서 2024 대학생 창작 모빌리티 경진대회에 사용했던 제어 파트의 모든 것
 
-![image](https://github.com/user-attachments/assets/207a4166-f4aa-4fff-8612-c657b25a92bc)
+
+![image](https://github.com/user-attachments/assets/d0d17866-be94-43c7-be99-e9ae061086d7)
+
 
 
 https://github.com/user-attachments/assets/eb7b4ba7-077a-4692-982d-707644006857
