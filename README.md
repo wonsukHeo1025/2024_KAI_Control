@@ -9,11 +9,6 @@
 https://github.com/user-attachments/assets/eb7b4ba7-077a-4692-982d-707644006857
 
 
-https://github.com/user-attachments/assets/cfde363a-4079-4ee5-ae85-68c2481a473a
-
-
-
-
 
 ## 대회 개요
 자율주행 차량 설계부터 제작, 시스템 구현까지 통합된  혁신적인 모빌리티 솔루션을 개발
@@ -247,10 +242,12 @@ https://github.com/user-attachments/assets/cfde363a-4079-4ee5-ae85-68c2481a473a
 
 ## 아키텍처 구조
 
-![image](https://github.com/user-attachments/assets/51111ca7-c6f7-4436-b412-340815785d2c)
+![image](https://github.com/user-attachments/assets/afb69ed7-50b2-4117-bd1c-9e6758c48370)
 
 
-![image](https://github.com/user-attachments/assets/37adb44a-4f39-4ade-b255-0523ee273684)
+
+![image](https://github.com/user-attachments/assets/bf54dff1-84ba-40ad-83ba-e8964882279e)
+
 
 
 
