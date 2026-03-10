@@ -242,7 +242,6 @@ https://github.com/user-attachments/assets/eb7b4ba7-077a-4692-982d-707644006857
 
 ## 아키텍처 구조
 
-![image](https://github.com/user-attachments/assets/afb69ed7-50b2-4117-bd1c-9e6758c48370)
 
 
 
