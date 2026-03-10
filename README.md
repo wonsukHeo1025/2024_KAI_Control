@@ -1,5 +1,5 @@
 # KAI Driverless car Control part
-건국대학교 자작자동차 동아리 'Team K.A.I'에서 2024 대학생 창작 모빌리티 경진대회에 사용했던 제어 파트의 모든 것
+건국대학교 자작자동차 동아리 Team K.A.I에서 2024 대학생 창작 모빌리티 경진대회에 담당했던 제어 파트
 
 
 ![image](https://github.com/user-attachments/assets/d0d17866-be94-43c7-be99-e9ae061086d7)
@@ -10,8 +10,8 @@ https://github.com/user-attachments/assets/eb7b4ba7-077a-4692-982d-707644006857
 
 
 
-## 대회 개요
-자율주행 차량 설계부터 제작, 시스템 구현까지 통합된  혁신적인 모빌리티 솔루션을 개발
+## 개요
+실차의 1/2 사이즈의 자작 자율주행 차량의 Low Control을 담당
 
 
 ## 각 패키지 설명
